@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+<meta charset="UTF-8">
+<title>تمرین جدول با background-image</title>
+<style>
+  table {
+    width: 70%;
+    border-collapse: collapse;
+    margin: 30px auto;
+    text-align: center;
+  }
+
+  th, td {
+    border: 1px solid #aaa;
+    padding: 40px 0; /* برای دیده شدن تصویر */
+    background-size: 40px 40px;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  tr:hover {
+    background-color: #e6f7ff;
+  }
+
+  /* تصویر در سلول‌ها با CSS */
+  .icon-server {
+    background-image: url('https://cdn-icons-png.flaticon.com/512/616/616408.png');
+  }
+
+  .icon-cloud {
+    background-image: url('https://cdn-icons-png.flaticon.com/512/414/414974.png');
+  }
+
+  .icon-briefcase {
+    background-image: url('https://cdn-icons-png.flaticon.com/512/1126/1126870.png');
+  }
+</style>
+</head>
+<body>
+
+<h2 style="text-align:center;">روش ۲: استفاده از background-image</h2>
+
+<table>
+  <tr>
+    <th>ردیف</th>
+    <th>آیکون</th>
+    <th>توضیحات</th>
+  </tr>
+  <tr>
+    <td>۱</td>
+    <td class="icon-server"></td>
+    <td>پلن استارتر</td>
+  </tr>
+  <tr>
+    <td>۲</td>
+    <td class="icon-cloud"></td>
+    <td>پلن متوسط</td>
+  </tr>
+  <tr>
+    <td>۳</td>
+    <td class="icon-briefcase"></td>
+    <td>پلن بیزینس</td>
+  </tr>
+</table>
+
+</body>
+</html>
